@@ -11,6 +11,10 @@
 		0ED0A095222BD338007057CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ED0A093222BD338007057CA /* Main.storyboard */; };
 		0ED0A097222BD339007057CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED0A096222BD339007057CA /* Assets.xcassets */; };
 		0ED0A09A222BD339007057CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ED0A098222BD339007057CA /* LaunchScreen.storyboard */; };
+		0ED0A0B6222BDADE007057CA /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED0A0B5222BDADE007057CA /* Balance.swift */; };
+		0ED0A0B8222BDAFE007057CA /* BalanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED0A0B7222BDAFE007057CA /* BalanceTests.swift */; };
+		0ED0A0BB222BDC67007057CA /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED0A0BA222BDC67007057CA /* JSONLoader.swift */; };
+		0ED0A0BF222BDEE0007057CA /* balance.json in Resources */ = {isa = PBXBuildFile; fileRef = 0ED0A0BE222BDEE0007057CA /* balance.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,10 @@
 		0ED0A09B222BD339007057CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ED0A0A0222BD339007057CA /* SweepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED0A0A6222BD339007057CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ED0A0B5222BDADE007057CA /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
+		0ED0A0B7222BDAFE007057CA /* BalanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceTests.swift; sourceTree = "<group>"; };
+		0ED0A0BA222BDC67007057CA /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		0ED0A0BE222BDEE0007057CA /* balance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = balance.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				0ED0A0AF222BD41F007057CA /* App */,
+				0ED0A0B3222BDAA4007057CA /* Models */,
 				0ED0A0B1222BD44C007057CA /* Resources */,
 				0ED0A0B0222BD435007057CA /* Storyboards */,
+				0ED0A0B9222BDC4B007057CA /* Utilities */,
 			);
 			path = Sweep;
 			sourceTree = "<group>";
@@ -83,6 +93,7 @@
 		0ED0A0A3222BD339007057CA /* SweepTests */ = {
 			isa = PBXGroup;
 			children = (
+				0ED0A0B4222BDAB6007057CA /* Models */,
 				0ED0A0A6222BD339007057CA /* Info.plist */,
 			);
 			path = SweepTests;
@@ -108,10 +119,43 @@
 		0ED0A0B1222BD44C007057CA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0ED0A0BD222BDED2007057CA /* JSON */,
 				0ED0A096222BD339007057CA /* Assets.xcassets */,
 				0ED0A09B222BD339007057CA /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0ED0A0B3222BDAA4007057CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0ED0A0B5222BDADE007057CA /* Balance.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0ED0A0B4222BDAB6007057CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0ED0A0B7222BDAFE007057CA /* BalanceTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0ED0A0B9222BDC4B007057CA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0ED0A0BA222BDC67007057CA /* JSONLoader.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0ED0A0BD222BDED2007057CA /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				0ED0A0BE222BDEE0007057CA /* balance.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +212,7 @@
 					};
 					0ED0A09F222BD339007057CA = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 0ED0A08B222BD338007057CA;
 					};
 				};
@@ -198,6 +243,7 @@
 			files = (
 				0ED0A09A222BD339007057CA /* LaunchScreen.storyboard in Resources */,
 				0ED0A097222BD339007057CA /* Assets.xcassets in Resources */,
+				0ED0A0BF222BDEE0007057CA /* balance.json in Resources */,
 				0ED0A095222BD338007057CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED0A0B6222BDADE007057CA /* Balance.swift in Sources */,
 				0ED0A090222BD338007057CA /* AppDelegate.swift in Sources */,
+				0ED0A0BB222BDC67007057CA /* JSONLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED0A0B8222BDAFE007057CA /* BalanceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +484,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HKXMUS7LVK;
 				INFOPLIST_FILE = SweepTests/Info.plist;
@@ -445,6 +495,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.squarefrog.SweepTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sweep.app/Sweep";
@@ -456,6 +507,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HKXMUS7LVK;
 				INFOPLIST_FILE = SweepTests/Info.plist;
