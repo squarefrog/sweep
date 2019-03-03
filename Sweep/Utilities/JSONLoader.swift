@@ -14,6 +14,7 @@ public struct JSONLoader {
     /// A list of files available to load
     public enum File: String {
         case balance
+        case accounts
     }
 
     /// Load a stubbed JSON response from the main bundle
