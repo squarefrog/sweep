@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1F4404222C6BA000E60341 /* SweepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4403222C6BA000E60341 /* SweepViewController.swift */; };
 		0EC25302222BF5A6006A5574 /* pots.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EC25301222BF5A6006A5574 /* pots.json */; };
 		0EC25304222BF5BF006A5574 /* PotsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25303222BF5BF006A5574 /* PotsResponse.swift */; };
 		0EC25306222BF5C5006A5574 /* Pot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25305222BF5C5006A5574 /* Pot.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E1F4403222C6BA000E60341 /* SweepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweepViewController.swift; sourceTree = "<group>"; };
 		0EC25301222BF5A6006A5574 /* pots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pots.json; sourceTree = "<group>"; };
 		0EC25303222BF5BF006A5574 /* PotsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsResponse.swift; sourceTree = "<group>"; };
 		0EC25305222BF5C5006A5574 /* Pot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pot.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E1F4402222C6B8B00E60341 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E1F4403222C6BA000E60341 /* SweepViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		0EC25307222BF681006A5574 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 				0ED0A0B1222BD44C007057CA /* Resources */,
 				0ED0A0B0222BD435007057CA /* Storyboards */,
 				0ED0A0B9222BDC4B007057CA /* Utilities */,
+				0E1F4402222C6B8B00E60341 /* ViewControllers */,
 			);
 			path = Sweep;
 			sourceTree = "<group>";
@@ -333,6 +344,7 @@
 				0ED0A090222BD338007057CA /* AppDelegate.swift in Sources */,
 				0EC25306222BF5C5006A5574 /* Pot.swift in Sources */,
 				0ED0A0BB222BDC67007057CA /* JSONLoader.swift in Sources */,
+				0E1F4404222C6BA000E60341 /* SweepViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
