@@ -6,11 +6,7 @@ import XCTest
 import Sweep
 
 class AccountTests: XCTestCase {
-    let dateFormatter: DateFormatter = {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-        return dateFormatter
-    }()
+    let dateFormatter = DateFormatter.iso8601Formatter()
 
     var accounts: [Account]!
 

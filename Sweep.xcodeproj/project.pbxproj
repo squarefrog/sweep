@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EC25309222BF699006A5574 /* DateFormatter+iso8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25308222BF699006A5574 /* DateFormatter+iso8601.swift */; };
 		0ED0A090222BD338007057CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED0A08F222BD338007057CA /* AppDelegate.swift */; };
 		0ED0A095222BD338007057CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ED0A093222BD338007057CA /* Main.storyboard */; };
 		0ED0A097222BD339007057CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED0A096222BD339007057CA /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EC25308222BF699006A5574 /* DateFormatter+iso8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+iso8601.swift"; sourceTree = "<group>"; };
 		0ED0A08C222BD338007057CA /* Sweep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sweep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED0A08F222BD338007057CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ED0A094222BD338007057CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EC25307222BF681006A5574 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0EC25308222BF699006A5574 /* DateFormatter+iso8601.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0ED0A083222BD338007057CA = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		0ED0A0A3222BD339007057CA /* SweepTests */ = {
 			isa = PBXGroup;
 			children = (
+				0EC25307222BF681006A5574 /* Helpers */,
 				0ED0A0B4222BDAB6007057CA /* Models */,
 				0ED0A0A6222BD339007057CA /* Info.plist */,
 			);
@@ -312,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ED0A0B8222BDAFE007057CA /* BalanceTests.swift in Sources */,
+				0EC25309222BF699006A5574 /* DateFormatter+iso8601.swift in Sources */,
 				0ED0A0C5222BEBCA007057CA /* AccountTests.swift in Sources */,
 				0ED0A0CA222BEF1B007057CA /* AccountsResponseTests.swift in Sources */,
 			);
