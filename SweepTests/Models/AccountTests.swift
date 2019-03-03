@@ -8,33 +8,35 @@ import Sweep
 class AccountTests: XCTestCase {
     let dateFormatter = DateFormatter.iso8601Formatter()
 
+    var data: Data {
+        return """
+        {
+          "id": "acc_00009237aqC8c5umZmrRdh",
+          "description": "Peter Pan's Account",
+          "created": "2015-11-13T12:17:42Z"
+        }
+        """.data(using: .utf8)!
+    }
+
     var accounts: [Account]!
 
-    override func setUp() {
-        super.setUp()
-        loadAccounts()
-    }
-
     func test_Account_CanBeDecodedFromJSON() {
-        let account = accounts[0]
-
-        XCTAssertEqual(account.id, "acc_00009237aqC8c5umZmrRdh")
-        XCTAssertEqual(account.description, "Peter Pan's Account")
-        let created = dateFormatter.string(from: account.created)
-        XCTAssertEqual(created, "2015-11-13T12:17:42Z")
-    }
-
-    private func loadAccounts() {
-        let data = JSONLoader.load(.accounts)
+        // Given
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
 
-        let response = try? decoder.decode(AccountsResponse.self, from: data)
-        guard let accounts = response?.accounts else {
-            fatalError("Unable to decode accounts")
-        }
+        do {
+            // When
+            let account = try decoder.decode(Account.self, from: data)
 
-        self.accounts = accounts
+            // Then
+            XCTAssertEqual(account.id, "acc_00009237aqC8c5umZmrRdh")
+            XCTAssertEqual(account.description, "Peter Pan's Account")
+            let created = dateFormatter.string(from: account.created)
+            XCTAssertEqual(created, "2015-11-13T12:17:42Z")
+        } catch {
+            XCTFail("Unable to decode account \(error)")
+        }
     }
 
 }
