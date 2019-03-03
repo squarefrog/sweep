@@ -1,0 +1,34 @@
+{
+  "pots": [
+    {
+      "id": "pot_0000778xxfgh4iu8z83nWb",
+      "name": "Savings",
+      "style": "beach_ball",
+      "balance": 133700,
+      "currency": "GBP",
+      "created": "2017-11-09T12:30:53.695Z",
+      "updated": "2017-11-09T12:30:53.695Z",
+      "deleted": false
+    },
+    {
+      "id": "pot_0000779UgBwzepefeG9Xd",
+      "name": "World Domination",
+      "style": "beach_ball",
+      "balance": 123400,
+      "currency": "GBP",
+      "created": "2018-09-10T03:32:52.245Z",
+      "updated": "2018-09-10T03:32:52.245Z",
+      "deleted": true
+    },
+    {
+      "id": "pot_0000780xxfgh4iu8z83nWb",
+      "name": "Rainy Day",
+      "style": "beach_ball",
+      "balance": 67890,
+      "currency": "GBP",
+      "created": "2019-01-01T05:34:17.253Z",
+      "updated": "2019-01-01T05:34:17.253Z",
+      "deleted": false
+    }
+  ]
+}
