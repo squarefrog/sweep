@@ -11,6 +11,7 @@
 		0E1F4407222C6C2A00E60341 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4406222C6C2A00E60341 /* DataSource.swift */; };
 		0E1F4412222C769E00E60341 /* DataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4411222C769E00E60341 /* DataSourceTests.swift */; };
 		0E1F4414222D276C00E60341 /* CollectionViewPartialMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4413222D276C00E60341 /* CollectionViewPartialMock.swift */; };
+		0E1F4417222D2BCF00E60341 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4416222D2BCF00E60341 /* ReusableCell.swift */; };
 		0EC25302222BF5A6006A5574 /* pots.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EC25301222BF5A6006A5574 /* pots.json */; };
 		0EC25304222BF5BF006A5574 /* PotsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25303222BF5BF006A5574 /* PotsResponse.swift */; };
 		0EC25306222BF5C5006A5574 /* Pot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25305222BF5C5006A5574 /* Pot.swift */; };
@@ -47,6 +48,7 @@
 		0E1F4406222C6C2A00E60341 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		0E1F4411222C769E00E60341 /* DataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceTests.swift; sourceTree = "<group>"; };
 		0E1F4413222D276C00E60341 /* CollectionViewPartialMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPartialMock.swift; sourceTree = "<group>"; };
+		0E1F4416222D2BCF00E60341 /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		0EC25301222BF5A6006A5574 /* pots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pots.json; sourceTree = "<group>"; };
 		0EC25303222BF5BF006A5574 /* PotsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsResponse.swift; sourceTree = "<group>"; };
 		0EC25305222BF5C5006A5574 /* Pot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pot.swift; sourceTree = "<group>"; };
@@ -114,6 +116,14 @@
 			path = DataSources;
 			sourceTree = "<group>";
 		};
+		0E1F4415222D2BBC00E60341 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0E1F4416222D2BCF00E60341 /* ReusableCell.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		0EC25307222BF681006A5574 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +157,7 @@
 				0ED0A0AF222BD41F007057CA /* App */,
 				0E1F4405222C6C1400E60341 /* DataSources */,
 				0ED0A0B3222BDAA4007057CA /* Models */,
+				0E1F4415222D2BBC00E60341 /* Protocols */,
 				0ED0A0B1222BD44C007057CA /* Resources */,
 				0ED0A0B0222BD435007057CA /* Storyboards */,
 				0ED0A0B9222BDC4B007057CA /* Utilities */,
@@ -362,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E1F4417222D2BCF00E60341 /* ReusableCell.swift in Sources */,
 				0E1F4407222C6C2A00E60341 /* DataSource.swift in Sources */,
 				0ED0A0B6222BDADE007057CA /* Balance.swift in Sources */,
 				0ED0A0C3222BEBB6007057CA /* Account.swift in Sources */,
