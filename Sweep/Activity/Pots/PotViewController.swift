@@ -4,6 +4,5 @@
 
 import UIKit
 
-class PotViewController: UICollectionViewController {
-
+class PotViewController: UICollectionViewController, Storyboarded {
 }
