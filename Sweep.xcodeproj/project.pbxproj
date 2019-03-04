@@ -12,6 +12,7 @@
 		0E1F4412222C769E00E60341 /* DataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4411222C769E00E60341 /* DataSourceTests.swift */; };
 		0E1F4414222D276C00E60341 /* CollectionViewPartialMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4413222D276C00E60341 /* CollectionViewPartialMock.swift */; };
 		0E1F4417222D2BCF00E60341 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4416222D2BCF00E60341 /* ReusableCell.swift */; };
+		0E1F441B222D302700E60341 /* PotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F441A222D302700E60341 /* PotViewController.swift */; };
 		0EC25302222BF5A6006A5574 /* pots.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EC25301222BF5A6006A5574 /* pots.json */; };
 		0EC25304222BF5BF006A5574 /* PotsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25303222BF5BF006A5574 /* PotsResponse.swift */; };
 		0EC25306222BF5C5006A5574 /* Pot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25305222BF5C5006A5574 /* Pot.swift */; };
@@ -49,6 +50,7 @@
 		0E1F4411222C769E00E60341 /* DataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceTests.swift; sourceTree = "<group>"; };
 		0E1F4413222D276C00E60341 /* CollectionViewPartialMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPartialMock.swift; sourceTree = "<group>"; };
 		0E1F4416222D2BCF00E60341 /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		0E1F441A222D302700E60341 /* PotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotViewController.swift; sourceTree = "<group>"; };
 		0EC25301222BF5A6006A5574 /* pots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pots.json; sourceTree = "<group>"; };
 		0EC25303222BF5BF006A5574 /* PotsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsResponse.swift; sourceTree = "<group>"; };
 		0EC25305222BF5C5006A5574 /* Pot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pot.swift; sourceTree = "<group>"; };
@@ -124,6 +126,22 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		0E1F4418222D2FE100E60341 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				0E1F4419222D2FEC00E60341 /* Pots */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		0E1F4419222D2FEC00E60341 /* Pots */ = {
+			isa = PBXGroup;
+			children = (
+				0E1F441A222D302700E60341 /* PotViewController.swift */,
+			);
+			path = Pots;
+			sourceTree = "<group>";
+		};
 		0EC25307222BF681006A5574 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +172,7 @@
 		0ED0A08E222BD338007057CA /* Sweep */ = {
 			isa = PBXGroup;
 			children = (
+				0E1F4418222D2FE100E60341 /* Activity */,
 				0ED0A0AF222BD41F007057CA /* App */,
 				0E1F4405222C6C1400E60341 /* DataSources */,
 				0ED0A0B3222BDAA4007057CA /* Models */,
@@ -379,6 +398,7 @@
 				0ED0A0C3222BEBB6007057CA /* Account.swift in Sources */,
 				0EC25304222BF5BF006A5574 /* PotsResponse.swift in Sources */,
 				0ED0A0C8222BEEB5007057CA /* AccountsResponse.swift in Sources */,
+				0E1F441B222D302700E60341 /* PotViewController.swift in Sources */,
 				0ED0A090222BD338007057CA /* AppDelegate.swift in Sources */,
 				0EC25306222BF5C5006A5574 /* Pot.swift in Sources */,
 				0ED0A0BB222BDC67007057CA /* JSONLoader.swift in Sources */,
