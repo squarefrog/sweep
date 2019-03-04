@@ -16,6 +16,7 @@
 		0E1F4421222D32BA00E60341 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4420222D32BA00E60341 /* Storyboarded.swift */; };
 		0E1F4426222D357C00E60341 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4425222D357C00E60341 /* CardCell.swift */; };
 		0E1F4428222D36B800E60341 /* PotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4427222D36B800E60341 /* PotViewModel.swift */; };
+		0E1F4430222D432600E60341 /* PeekPagedFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F442F222D432600E60341 /* PeekPagedFlowLayout.swift */; };
 		0EC25302222BF5A6006A5574 /* pots.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EC25301222BF5A6006A5574 /* pots.json */; };
 		0EC25304222BF5BF006A5574 /* PotsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25303222BF5BF006A5574 /* PotsResponse.swift */; };
 		0EC25306222BF5C5006A5574 /* Pot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25305222BF5C5006A5574 /* Pot.swift */; };
@@ -57,6 +58,7 @@
 		0E1F4420222D32BA00E60341 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		0E1F4425222D357C00E60341 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		0E1F4427222D36B800E60341 /* PotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotViewModel.swift; sourceTree = "<group>"; };
+		0E1F442F222D432600E60341 /* PeekPagedFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeekPagedFlowLayout.swift; sourceTree = "<group>"; };
 		0EC25301222BF5A6006A5574 /* pots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pots.json; sourceTree = "<group>"; };
 		0EC25303222BF5BF006A5574 /* PotsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsResponse.swift; sourceTree = "<group>"; };
 		0EC25305222BF5C5006A5574 /* Pot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pot.swift; sourceTree = "<group>"; };
@@ -158,6 +160,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0E1F442E222D431100E60341 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				0E1F442F222D432600E60341 /* PeekPagedFlowLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
 		0EC25307222BF681006A5574 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +198,7 @@
 		0ED0A08E222BD338007057CA /* Sweep */ = {
 			isa = PBXGroup;
 			children = (
+				0E1F442E222D431100E60341 /* Layout */,
 				0E1F4418222D2FE100E60341 /* Activity */,
 				0ED0A0AF222BD41F007057CA /* App */,
 				0E1F4405222C6C1400E60341 /* DataSources */,
@@ -421,6 +432,7 @@
 				0ED0A0BB222BDC67007057CA /* JSONLoader.swift in Sources */,
 				0E1F4404222C6BA000E60341 /* SweepViewController.swift in Sources */,
 				0E1F4426222D357C00E60341 /* CardCell.swift in Sources */,
+				0E1F4430222D432600E60341 /* PeekPagedFlowLayout.swift in Sources */,
 				0E1F4428222D36B800E60341 /* PotViewModel.swift in Sources */,
 				0E1F4421222D32BA00E60341 /* Storyboarded.swift in Sources */,
 			);
