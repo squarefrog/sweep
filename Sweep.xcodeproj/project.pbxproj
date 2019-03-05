@@ -24,6 +24,9 @@
 		0E1F446E222E9B4500E60341 /* Array+wrappedItemAt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F446D222E9B4500E60341 /* Array+wrappedItemAt.swift */; };
 		0E1F4471222E9D3500E60341 /* ArrayExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4470222E9D3500E60341 /* ArrayExtensionTests.swift */; };
 		0E1F4473222E9E7F00E60341 /* UIColorExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4472222E9E7F00E60341 /* UIColorExtensionTests.swift */; };
+		0E1F447B222EA52400E60341 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F447A222EA52400E60341 /* AccountsViewModel.swift */; };
+		0E1F447D222EAC8400E60341 /* CardCellPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F447C222EAC8400E60341 /* CardCellPresentable.swift */; };
+		0E1F447F222EAD4100E60341 /* ProvidesBackgroundColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F447E222EAD4100E60341 /* ProvidesBackgroundColors.swift */; };
 		0EC25302222BF5A6006A5574 /* pots.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EC25301222BF5A6006A5574 /* pots.json */; };
 		0EC25304222BF5BF006A5574 /* PotsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25303222BF5BF006A5574 /* PotsResponse.swift */; };
 		0EC25306222BF5C5006A5574 /* Pot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25305222BF5C5006A5574 /* Pot.swift */; };
@@ -73,6 +76,9 @@
 		0E1F446D222E9B4500E60341 /* Array+wrappedItemAt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+wrappedItemAt.swift"; sourceTree = "<group>"; };
 		0E1F4470222E9D3500E60341 /* ArrayExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionTests.swift; sourceTree = "<group>"; };
 		0E1F4472222E9E7F00E60341 /* UIColorExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionTests.swift; sourceTree = "<group>"; };
+		0E1F447A222EA52400E60341 /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
+		0E1F447C222EAC8400E60341 /* CardCellPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellPresentable.swift; sourceTree = "<group>"; };
+		0E1F447E222EAD4100E60341 /* ProvidesBackgroundColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidesBackgroundColors.swift; sourceTree = "<group>"; };
 		0EC25301222BF5A6006A5574 /* pots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pots.json; sourceTree = "<group>"; };
 		0EC25303222BF5BF006A5574 /* PotsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsResponse.swift; sourceTree = "<group>"; };
 		0EC25305222BF5C5006A5574 /* Pot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pot.swift; sourceTree = "<group>"; };
@@ -143,6 +149,8 @@
 		0E1F4415222D2BBC00E60341 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				0E1F447C222EAC8400E60341 /* CardCellPresentable.swift */,
+				0E1F447E222EAD4100E60341 /* ProvidesBackgroundColors.swift */,
 				0E1F4416222D2BCF00E60341 /* ReusableCell.swift */,
 				0E1F4420222D32BA00E60341 /* Storyboarded.swift */,
 			);
@@ -152,6 +160,7 @@
 		0E1F4418222D2FE100E60341 /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				0E1F4476222EA4B100E60341 /* Accounts */,
 				0E1F4419222D2FEC00E60341 /* Pots */,
 			);
 			path = Activity;
@@ -214,6 +223,7 @@
 		0E1F4474222EA40000E60341 /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				0E1F4479222EA50200E60341 /* Accounts */,
 				0E1F4475222EA40700E60341 /* Pots */,
 			);
 			path = Activity;
@@ -226,6 +236,23 @@
 				0EC2530C222BF889006A5574 /* PotTests.swift */,
 			);
 			path = Pots;
+			sourceTree = "<group>";
+		};
+		0E1F4476222EA4B100E60341 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				0E1F447A222EA52400E60341 /* AccountsViewModel.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		0E1F4479222EA50200E60341 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				0ED0A0C9222BEF1B007057CA /* AccountsResponseTests.swift */,
+				0ED0A0C4222BEBCA007057CA /* AccountTests.swift */,
+			);
+			path = Accounts;
 			sourceTree = "<group>";
 		};
 		0EC25307222BF681006A5574 /* Helpers */ = {
@@ -328,8 +355,6 @@
 		0ED0A0B4222BDAB6007057CA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0ED0A0C9222BEF1B007057CA /* AccountsResponseTests.swift */,
-				0ED0A0C4222BEBCA007057CA /* AccountTests.swift */,
 				0ED0A0B7222BDAFE007057CA /* BalanceTests.swift */,
 			);
 			path = Models;
@@ -481,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E1F447F222EAD4100E60341 /* ProvidesBackgroundColors.swift in Sources */,
 				0E1F4464222E7AB400E60341 /* PagedCollectionView.swift in Sources */,
 				0E1F446E222E9B4500E60341 /* Array+wrappedItemAt.swift in Sources */,
 				0E1F4417222D2BCF00E60341 /* ReusableCell.swift in Sources */,
@@ -494,12 +520,14 @@
 				0ED0A090222BD338007057CA /* AppDelegate.swift in Sources */,
 				0E1F4469222E965B00E60341 /* Theme.swift in Sources */,
 				0EC25306222BF5C5006A5574 /* Pot.swift in Sources */,
+				0E1F447D222EAC8400E60341 /* CardCellPresentable.swift in Sources */,
 				0ED0A0BB222BDC67007057CA /* JSONLoader.swift in Sources */,
 				0E1F4404222C6BA000E60341 /* SweepViewController.swift in Sources */,
 				0E1F4426222D357C00E60341 /* CardCell.swift in Sources */,
 				0E1F4430222D432600E60341 /* PeekPagedFlowLayout.swift in Sources */,
 				0E1F4428222D36B800E60341 /* PotViewModel.swift in Sources */,
 				0E1F4467222E89A100E60341 /* FlatColors.swift in Sources */,
+				0E1F447B222EA52400E60341 /* AccountsViewModel.swift in Sources */,
 				0E1F4421222D32BA00E60341 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
