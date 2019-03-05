@@ -27,4 +27,9 @@ struct PotViewModel {
     private func configureBackground(in cell: CardCell, for pot: Pot) {
         cell.backgroundColor = .orange
     }
+
+    /// Configure the main view
+    func configureView(_ view: UIView) {
+        view.backgroundColor = .white
+    }
 }

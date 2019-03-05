@@ -30,5 +30,7 @@ class PeekPagedFlowLayout: UICollectionViewFlowLayout {
 
         // Add left inset to center the cell
         sectionInset = UIEdgeInsets(top: 0, left: spacing * 2, bottom: 0, right: 0)
+
+        scrollDirection = .horizontal
     }
 }
