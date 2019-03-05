@@ -160,6 +160,8 @@
 		0E1F4419222D2FEC00E60341 /* Pots */ = {
 			isa = PBXGroup;
 			children = (
+				0EC25305222BF5C5006A5574 /* Pot.swift */,
+				0EC25303222BF5BF006A5574 /* PotsResponse.swift */,
 				0E1F441A222D302700E60341 /* PotViewController.swift */,
 				0E1F4427222D36B800E60341 /* PotViewModel.swift */,
 			);
@@ -207,6 +209,23 @@
 				0E1F4472222E9E7F00E60341 /* UIColorExtensionTests.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0E1F4474222EA40000E60341 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				0E1F4475222EA40700E60341 /* Pots */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		0E1F4475222EA40700E60341 /* Pots */ = {
+			isa = PBXGroup;
+			children = (
+				0EC2530A222BF812006A5574 /* PotsResponseTests.swift */,
+				0EC2530C222BF889006A5574 /* PotTests.swift */,
+			);
+			path = Pots;
 			sourceTree = "<group>";
 		};
 		0EC25307222BF681006A5574 /* Helpers */ = {
@@ -259,6 +278,7 @@
 		0ED0A0A3222BD339007057CA /* SweepTests */ = {
 			isa = PBXGroup;
 			children = (
+				0E1F4474222EA40000E60341 /* Activity */,
 				0E1F4410222C768D00E60341 /* DataSources */,
 				0E1F446F222E9D0D00E60341 /* Extensions */,
 				0EC25307222BF681006A5574 /* Helpers */,
@@ -301,8 +321,6 @@
 				0ED0A0C2222BEBB6007057CA /* Account.swift */,
 				0ED0A0C7222BEEB5007057CA /* AccountsResponse.swift */,
 				0ED0A0B5222BDADE007057CA /* Balance.swift */,
-				0EC25303222BF5BF006A5574 /* PotsResponse.swift */,
-				0EC25305222BF5C5006A5574 /* Pot.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -313,8 +331,6 @@
 				0ED0A0C9222BEF1B007057CA /* AccountsResponseTests.swift */,
 				0ED0A0C4222BEBCA007057CA /* AccountTests.swift */,
 				0ED0A0B7222BDAFE007057CA /* BalanceTests.swift */,
-				0EC2530A222BF812006A5574 /* PotsResponseTests.swift */,
-				0EC2530C222BF889006A5574 /* PotTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
