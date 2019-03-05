@@ -5,13 +5,8 @@
 import UIKit
 
 /// A view model responsible for configuring how the `PotViewController` displays data
-struct PotViewModel {
-    /// The reuse identifier for the cell
-    var reuseIdentifier: String {
-        return CardCell.reuseIdentifier
-    }
-
-    private let backgroundColors = Theme.availableBackgroundColors.shuffled()
+struct PotViewModel: CardCellPresentable, ProvidesBackgroundColors {
+    private let backgroundColors = shuffledBackgroundColors
 
     /// Configure a cell using a pot
     func configure(cell: UICollectionViewCell, for pot: Pot, item: Int) {
@@ -33,7 +28,6 @@ struct PotViewModel {
     /// Configure view
     func setupView(_ view: PagedCollectionView) {
         view.backgroundColor = Theme.backgroundColor.color
-        view.collectionView.register(CardCell.self,
-                                     forCellWithReuseIdentifier: CardCell.reuseIdentifier)
+        registerCardCell(in: view.collectionView)
     }
 }
