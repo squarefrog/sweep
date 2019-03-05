@@ -6,7 +6,7 @@ import UIKit
 
 /// A generic collection view data source for displaying a flat array of `Model` items
 public final class DataSource<Model>: NSObject, UICollectionViewDataSource {
-    public typealias CellConfigurator = (UICollectionViewCell, Model) -> Void
+    public typealias CellConfigurator = (UICollectionViewCell, Model, Int) -> Void
 
     public var items: [Model]
 
@@ -34,7 +34,7 @@ public final class DataSource<Model>: NSObject, UICollectionViewDataSource {
                                cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
 
-        configureCell(cell, items[indexPath.item])
+        configureCell(cell, items[indexPath.item], indexPath.item)
 
         return cell
     }

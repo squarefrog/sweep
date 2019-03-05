@@ -14,13 +14,15 @@ class DataSourceTests: XCTestCase {
     var dataSource: DataSource<String>!
 
     /// Capture the arguments when data source is configuring the cell
-    lazy var configure: ((UICollectionViewCell, String) -> Void) = { [unowned self] cell, model in
+    lazy var configure: ((UICollectionViewCell, String, Int) -> Void) = { [unowned self] cell, model, index in
         self.configureCell = cell
         self.configureModel = model
+        self.configureIndex = index
     }
 
     var configureCell: UICollectionViewCell?
     var configureModel: String?
+    var configureIndex: Int?
 
     override func setUp() {
         dataSource = DataSource<String>(items: items,
@@ -54,5 +56,6 @@ class DataSourceTests: XCTestCase {
 
         XCTAssertEqual(configureCell, mockCollectionView.cell)
         XCTAssertEqual(configureModel, items.first)
+        XCTAssertEqual(configureIndex, indexPath.item)
     }
 }
