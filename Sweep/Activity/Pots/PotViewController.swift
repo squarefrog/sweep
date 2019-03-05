@@ -4,7 +4,8 @@
 
 import UIKit
 
-class PotViewController: UIViewController, Storyboarded {
+/// Displays a list of Pots
+class PotViewController: UIViewController {
     private let viewModel = PotViewModel()
     private var dataSource: DataSource<Pot>!
 
