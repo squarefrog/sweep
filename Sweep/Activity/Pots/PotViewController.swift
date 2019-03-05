@@ -25,8 +25,7 @@ class PotViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerCells()
-        viewModel.configureView(pagedView)
+        viewModel.setupView(pagedView)
     }
 
     /// Sets up a collection view data source to display pots
@@ -36,9 +35,5 @@ class PotViewController: UIViewController, Storyboarded {
         dataSource = DataSource<Pot>(items: pots,
                                      reuseIdentifier: viewModel.reuseIdentifier,
                                      configureCell: viewModel.configure)
-    }
-
-    private func registerCells() {
-        pagedView.collectionView.register(viewModel.cellClass, forCellWithReuseIdentifier: viewModel.reuseIdentifier)
     }
 }

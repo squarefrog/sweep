@@ -4,12 +4,12 @@
 
 import UIKit
 
+/// A view model responsible for configuring how the `PotViewController` displays data
 struct PotViewModel {
+    /// The reuse identifier for the cell
     var reuseIdentifier: String {
         return CardCell.reuseIdentifier
     }
-
-    let cellClass = CardCell.self
 
     /// Configure a cell using a pot
     func configure(cell: UICollectionViewCell, for pot: Pot) {
@@ -28,8 +28,10 @@ struct PotViewModel {
         cell.backgroundColor = .orange
     }
 
-    /// Configure the main view
-    func configureView(_ view: UIView) {
+    /// Configure view
+    func setupView(_ view: PagedCollectionView) {
         view.backgroundColor = .white
+        view.collectionView.register(CardCell.self,
+                                     forCellWithReuseIdentifier: CardCell.reuseIdentifier)
     }
 }
