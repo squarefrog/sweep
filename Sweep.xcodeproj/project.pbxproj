@@ -27,6 +27,7 @@
 		0E1F447B222EA52400E60341 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F447A222EA52400E60341 /* AccountsViewModel.swift */; };
 		0E1F447D222EAC8400E60341 /* CardCellPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F447C222EAC8400E60341 /* CardCellPresentable.swift */; };
 		0E1F447F222EAD4100E60341 /* ProvidesBackgroundColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F447E222EAD4100E60341 /* ProvidesBackgroundColors.swift */; };
+		0E1F4481222EAE4D00E60341 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4480222EAE4D00E60341 /* AccountsViewController.swift */; };
 		0EC25302222BF5A6006A5574 /* pots.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EC25301222BF5A6006A5574 /* pots.json */; };
 		0EC25304222BF5BF006A5574 /* PotsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25303222BF5BF006A5574 /* PotsResponse.swift */; };
 		0EC25306222BF5C5006A5574 /* Pot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25305222BF5C5006A5574 /* Pot.swift */; };
@@ -79,6 +80,7 @@
 		0E1F447A222EA52400E60341 /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
 		0E1F447C222EAC8400E60341 /* CardCellPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellPresentable.swift; sourceTree = "<group>"; };
 		0E1F447E222EAD4100E60341 /* ProvidesBackgroundColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidesBackgroundColors.swift; sourceTree = "<group>"; };
+		0E1F4480222EAE4D00E60341 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		0EC25301222BF5A6006A5574 /* pots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pots.json; sourceTree = "<group>"; };
 		0EC25303222BF5BF006A5574 /* PotsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsResponse.swift; sourceTree = "<group>"; };
 		0EC25305222BF5C5006A5574 /* Pot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pot.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 		0E1F4476222EA4B100E60341 /* Accounts */ = {
 			isa = PBXGroup;
 			children = (
+				0E1F4480222EAE4D00E60341 /* AccountsViewController.swift */,
 				0E1F447A222EA52400E60341 /* AccountsViewModel.swift */,
 			);
 			path = Accounts;
@@ -528,6 +531,7 @@
 				0E1F4428222D36B800E60341 /* PotViewModel.swift in Sources */,
 				0E1F4467222E89A100E60341 /* FlatColors.swift in Sources */,
 				0E1F447B222EA52400E60341 /* AccountsViewModel.swift in Sources */,
+				0E1F4481222EAE4D00E60341 /* AccountsViewController.swift in Sources */,
 				0E1F4421222D32BA00E60341 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
