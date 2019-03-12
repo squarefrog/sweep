@@ -3,7 +3,7 @@
 //
 
 import XCTest
-import Sweep
+@testable import Sweep
 
 class AccountTests: XCTestCase {
     let dateFormatter = DateFormatter.iso8601Formatter()
@@ -17,8 +17,6 @@ class AccountTests: XCTestCase {
         }
         """.data(using: .utf8)!
     }
-
-    var accounts: [Account]!
 
     func test_Account_CanBeDecodedFromJSON() {
         // Given
@@ -37,6 +35,19 @@ class AccountTests: XCTestCase {
         } catch {
             XCTFail("Unable to decode account \(error)")
         }
+    }
+
+    func test_Account_CanBeUpdatedUsingBalanceModel() {
+        // Given
+        let monies = 133700
+        var account = Account(id: "", description: "", created: Date(), balance: nil, currency: nil)
+        let balanceModel = Balance(balance: monies, totalBalance: 100_000_000, currency: "GBP", spendToday: 0)
+
+        // When
+        account.update(with: balanceModel)
+
+        // Then
+        XCTAssertEqual(account.balance, monies)
     }
 
 }
