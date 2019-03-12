@@ -29,6 +29,8 @@
 		0E1F447F222EAD4100E60341 /* ProvidesBackgroundColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F447E222EAD4100E60341 /* ProvidesBackgroundColors.swift */; };
 		0E1F4481222EAE4D00E60341 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4480222EAE4D00E60341 /* AccountsViewController.swift */; };
 		0E1F4485222EBCFD00E60341 /* SweepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4484222EBCFD00E60341 /* SweepView.swift */; };
+		0EB8739422384D64003AC34F /* AccountBalanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB8739322384D64003AC34F /* AccountBalanceViewModel.swift */; };
+		0EB8739622384DB0003AC34F /* Locale+currencyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB8739522384DB0003AC34F /* Locale+currencyCode.swift */; };
 		0EC25302222BF5A6006A5574 /* pots.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EC25301222BF5A6006A5574 /* pots.json */; };
 		0EC25304222BF5BF006A5574 /* PotsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25303222BF5BF006A5574 /* PotsResponse.swift */; };
 		0EC25306222BF5C5006A5574 /* Pot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25305222BF5C5006A5574 /* Pot.swift */; };
@@ -83,6 +85,8 @@
 		0E1F447E222EAD4100E60341 /* ProvidesBackgroundColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidesBackgroundColors.swift; sourceTree = "<group>"; };
 		0E1F4480222EAE4D00E60341 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		0E1F4484222EBCFD00E60341 /* SweepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweepView.swift; sourceTree = "<group>"; };
+		0EB8739322384D64003AC34F /* AccountBalanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceViewModel.swift; sourceTree = "<group>"; };
+		0EB8739522384DB0003AC34F /* Locale+currencyCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+currencyCode.swift"; sourceTree = "<group>"; };
 		0EC25301222BF5A6006A5574 /* pots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pots.json; sourceTree = "<group>"; };
 		0EC25303222BF5BF006A5574 /* PotsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsResponse.swift; sourceTree = "<group>"; };
 		0EC25305222BF5C5006A5574 /* Pot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pot.swift; sourceTree = "<group>"; };
@@ -202,8 +206,9 @@
 		0E1F446A222E995800E60341 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0E1F446B222E997800E60341 /* UIColor+hexString.swift */,
 				0E1F446D222E9B4500E60341 /* Array+wrappedItemAt.swift */,
+				0EB8739522384DB0003AC34F /* Locale+currencyCode.swift */,
+				0E1F446B222E997800E60341 /* UIColor+hexString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 		0E1F4476222EA4B100E60341 /* Accounts */ = {
 			isa = PBXGroup;
 			children = (
+				0EB8739322384D64003AC34F /* AccountBalanceViewModel.swift */,
 				0E1F4480222EAE4D00E60341 /* AccountsViewController.swift */,
 				0E1F447A222EA52400E60341 /* AccountsViewModel.swift */,
 			);
@@ -525,6 +531,7 @@
 				0ED0A0C8222BEEB5007057CA /* AccountsResponse.swift in Sources */,
 				0E1F441B222D302700E60341 /* PotViewController.swift in Sources */,
 				0ED0A090222BD338007057CA /* AppDelegate.swift in Sources */,
+				0EB8739622384DB0003AC34F /* Locale+currencyCode.swift in Sources */,
 				0E1F4469222E965B00E60341 /* Theme.swift in Sources */,
 				0EC25306222BF5C5006A5574 /* Pot.swift in Sources */,
 				0E1F447D222EAC8400E60341 /* CardCellPresentable.swift in Sources */,
@@ -533,6 +540,7 @@
 				0E1F4426222D357C00E60341 /* CardCell.swift in Sources */,
 				0E1F4430222D432600E60341 /* PeekPagedFlowLayout.swift in Sources */,
 				0E1F4428222D36B800E60341 /* PotViewModel.swift in Sources */,
+				0EB8739422384D64003AC34F /* AccountBalanceViewModel.swift in Sources */,
 				0E1F4467222E89A100E60341 /* FlatColors.swift in Sources */,
 				0E1F447B222EA52400E60341 /* AccountsViewModel.swift in Sources */,
 				0E1F4481222EAE4D00E60341 /* AccountsViewController.swift in Sources */,
