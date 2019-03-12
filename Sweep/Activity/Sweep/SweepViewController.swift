@@ -36,7 +36,13 @@ final class SweepViewController: UIViewController {
 
     private func createAccountViewController() -> AccountsViewController {
         let accountVC = AccountsViewController()
-        accountVC.display(loadAccounts())
+        let balance = loadBalance()
+        let accounts: [Account] = loadAccounts().map {
+            var account = $0
+            account.update(with: balance)
+            return account
+        }
+        accountVC.display(accounts)
         return accountVC
     }
 
@@ -59,21 +65,29 @@ final class SweepViewController: UIViewController {
         print("SVEEEEEEEEEEEEEP!")
     }
 
-    private func loadPots() -> [Pot] {
+    // MARK: - Temporary Stubbed data loading
+
+    private let decoder: JSONDecoder = {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .iso8601
+        return decoder
+    }()
+
+    // swiftlint:disable force_try
+    private func loadPots() -> [Pot] {
         let data = JSONLoader.load(.pots)
-        // swiftlint:disable force_try
         let potResponse = try! decoder.decode(PotsResponse.self, from: data)
         return potResponse.pots
     }
 
     private func loadAccounts() -> [Account] {
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .iso8601
         let data = JSONLoader.load(.accounts)
-        // swiftlint:disable force_try
         let potResponse = try! decoder.decode(AccountsResponse.self, from: data)
         return potResponse.accounts
+    }
+
+    private func loadBalance() -> Balance {
+        let data = JSONLoader.load(.balance)
+        return try! decoder.decode(Balance.self, from: data)
     }
 }
