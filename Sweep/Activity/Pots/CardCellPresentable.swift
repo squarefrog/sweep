@@ -4,11 +4,7 @@
 
 import UIKit
 
-protocol CardCellPresentable {
-    var reuseIdentifier: String { get }
-
-    func registerCardCell(in collectionView: UICollectionView)
-}
+protocol CardCellPresentable: CellPresentable { }
 
 extension CardCellPresentable {
     /// The reuse identifier for the cell
