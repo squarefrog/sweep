@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ) -> Bool {
 
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UIViewController()
+        window?.rootViewController = SweepViewController()
         window?.makeKeyAndVisible()
 
         return true
