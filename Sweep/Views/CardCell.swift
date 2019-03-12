@@ -22,6 +22,7 @@ final class CardCell: UICollectionViewCell {
         addLabel()
         layoutLabel()
         roundEdges()
+        addBorder()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -47,4 +48,8 @@ final class CardCell: UICollectionViewCell {
         layer.cornerRadius = cornerRadius
     }
 
+    private func addBorder() {
+        layer.borderColor = UIColor(white: 1.0, alpha: 0.3).cgColor
+        layer.borderWidth = 0.5
+    }
 }
