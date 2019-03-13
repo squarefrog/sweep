@@ -14,7 +14,7 @@
 		0E1F4417222D2BCF00E60341 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4416222D2BCF00E60341 /* ReusableCell.swift */; };
 		0E1F441B222D302700E60341 /* PotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F441A222D302700E60341 /* PotViewController.swift */; };
 		0E1F4421222D32BA00E60341 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4420222D32BA00E60341 /* Storyboarded.swift */; };
-		0E1F4426222D357C00E60341 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4425222D357C00E60341 /* CardCell.swift */; };
+		0E1F4426222D357C00E60341 /* PotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4425222D357C00E60341 /* PotCell.swift */; };
 		0E1F4428222D36B800E60341 /* PotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4427222D36B800E60341 /* PotViewModel.swift */; };
 		0E1F4430222D432600E60341 /* PeekPagedFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F442F222D432600E60341 /* PeekPagedFlowLayout.swift */; };
 		0E1F4464222E7AB400E60341 /* PagedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4463222E7AB400E60341 /* PagedCollectionView.swift */; };
@@ -25,7 +25,7 @@
 		0E1F4471222E9D3500E60341 /* ArrayExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4470222E9D3500E60341 /* ArrayExtensionTests.swift */; };
 		0E1F4473222E9E7F00E60341 /* UIColorExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4472222E9E7F00E60341 /* UIColorExtensionTests.swift */; };
 		0E1F447B222EA52400E60341 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F447A222EA52400E60341 /* AccountsViewModel.swift */; };
-		0E1F447D222EAC8400E60341 /* CardCellPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F447C222EAC8400E60341 /* CardCellPresentable.swift */; };
+		0E1F447D222EAC8400E60341 /* PotCellPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F447C222EAC8400E60341 /* PotCellPresentable.swift */; };
 		0E1F447F222EAD4100E60341 /* ProvidesBackgroundColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F447E222EAD4100E60341 /* ProvidesBackgroundColors.swift */; };
 		0E1F4481222EAE4D00E60341 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4480222EAE4D00E60341 /* AccountsViewController.swift */; };
 		0E1F4485222EBCFD00E60341 /* SweepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4484222EBCFD00E60341 /* SweepView.swift */; };
@@ -73,7 +73,7 @@
 		0E1F4416222D2BCF00E60341 /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		0E1F441A222D302700E60341 /* PotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotViewController.swift; sourceTree = "<group>"; };
 		0E1F4420222D32BA00E60341 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
-		0E1F4425222D357C00E60341 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		0E1F4425222D357C00E60341 /* PotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PotCell.swift; sourceTree = "<group>"; };
 		0E1F4427222D36B800E60341 /* PotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotViewModel.swift; sourceTree = "<group>"; };
 		0E1F442F222D432600E60341 /* PeekPagedFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeekPagedFlowLayout.swift; sourceTree = "<group>"; };
 		0E1F4463222E7AB400E60341 /* PagedCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedCollectionView.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		0E1F4470222E9D3500E60341 /* ArrayExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensionTests.swift; sourceTree = "<group>"; };
 		0E1F4472222E9E7F00E60341 /* UIColorExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionTests.swift; sourceTree = "<group>"; };
 		0E1F447A222EA52400E60341 /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
-		0E1F447C222EAC8400E60341 /* CardCellPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellPresentable.swift; sourceTree = "<group>"; };
+		0E1F447C222EAC8400E60341 /* PotCellPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotCellPresentable.swift; sourceTree = "<group>"; };
 		0E1F447E222EAD4100E60341 /* ProvidesBackgroundColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidesBackgroundColors.swift; sourceTree = "<group>"; };
 		0E1F4480222EAE4D00E60341 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		0E1F4484222EBCFD00E60341 /* SweepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweepView.swift; sourceTree = "<group>"; };
@@ -176,8 +176,9 @@
 		0E1F4419222D2FEC00E60341 /* Pots */ = {
 			isa = PBXGroup;
 			children = (
-				0E1F447C222EAC8400E60341 /* CardCellPresentable.swift */,
 				0EC25305222BF5C5006A5574 /* Pot.swift */,
+				0E1F4425222D357C00E60341 /* PotCell.swift */,
+				0E1F447C222EAC8400E60341 /* PotCellPresentable.swift */,
 				0EC25303222BF5BF006A5574 /* PotsResponse.swift */,
 				0E1F441A222D302700E60341 /* PotViewController.swift */,
 				0E1F4427222D36B800E60341 /* PotViewModel.swift */,
@@ -188,7 +189,6 @@
 		0E1F4424222D356E00E60341 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0E1F4425222D357C00E60341 /* CardCell.swift */,
 				0E1F4463222E7AB400E60341 /* PagedCollectionView.swift */,
 			);
 			path = Views;
@@ -200,14 +200,6 @@
 				0E1F442F222D432600E60341 /* PeekPagedFlowLayout.swift */,
 			);
 			path = Layout;
-			sourceTree = "<group>";
-		};
-		0E1F4465222E899000E60341 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				0E1F4466222E89A100E60341 /* FlatColors.swift */,
-			);
-			path = Enums;
 			sourceTree = "<group>";
 		};
 		0E1F446A222E995800E60341 /* Extensions */ = {
@@ -250,6 +242,7 @@
 		0E1F4476222EA4B100E60341 /* Accounts */ = {
 			isa = PBXGroup;
 			children = (
+				0ED0A0B3222BDAA4007057CA /* Models */,
 				0EB8739322384D64003AC34F /* AccountBalanceViewModel.swift */,
 				0EB873972238550E003AC34F /* AccountCell.swift */,
 				0EB8739922386BA3003AC34F /* AccountCellPresentable.swift */,
@@ -310,10 +303,8 @@
 				0E1F4418222D2FE100E60341 /* Activity */,
 				0ED0A0AF222BD41F007057CA /* App */,
 				0E1F4405222C6C1400E60341 /* DataSources */,
-				0E1F4465222E899000E60341 /* Enums */,
 				0E1F446A222E995800E60341 /* Extensions */,
 				0E1F442E222D431100E60341 /* Layout */,
-				0ED0A0B3222BDAA4007057CA /* Models */,
 				0E1F4415222D2BBC00E60341 /* Protocols */,
 				0ED0A0B1222BD44C007057CA /* Resources */,
 				0ED0A0B0222BD435007057CA /* Storyboards */,
@@ -384,6 +375,7 @@
 		0ED0A0B9222BDC4B007057CA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				0E1F4466222E89A100E60341 /* FlatColors.swift */,
 				0ED0A0BA222BDC67007057CA /* JSONLoader.swift */,
 				0E1F4468222E965B00E60341 /* Theme.swift */,
 			);
@@ -546,10 +538,10 @@
 				0EB8739622384DB0003AC34F /* Locale+currencyCode.swift in Sources */,
 				0E1F4469222E965B00E60341 /* Theme.swift in Sources */,
 				0EC25306222BF5C5006A5574 /* Pot.swift in Sources */,
-				0E1F447D222EAC8400E60341 /* CardCellPresentable.swift in Sources */,
+				0E1F447D222EAC8400E60341 /* PotCellPresentable.swift in Sources */,
 				0ED0A0BB222BDC67007057CA /* JSONLoader.swift in Sources */,
 				0E1F4404222C6BA000E60341 /* SweepViewController.swift in Sources */,
-				0E1F4426222D357C00E60341 /* CardCell.swift in Sources */,
+				0E1F4426222D357C00E60341 /* PotCell.swift in Sources */,
 				0E1F4430222D432600E60341 /* PeekPagedFlowLayout.swift in Sources */,
 				0E1F4428222D36B800E60341 /* PotViewModel.swift in Sources */,
 				0EB8739422384D64003AC34F /* AccountBalanceViewModel.swift in Sources */,

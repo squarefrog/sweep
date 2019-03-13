@@ -5,7 +5,7 @@
 import UIKit
 
 /// A simple collection view cell containing a label
-final class CardCell: UICollectionViewCell {
+final class PotCell: UICollectionViewCell {
     /// The amount of rounding to apply to the corners
     private let cornerRadius: CGFloat = 5.0
 

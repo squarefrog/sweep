@@ -5,23 +5,23 @@
 import UIKit
 
 /// A view model responsible for configuring how the `PotViewController` displays data
-struct PotViewModel: CardCellPresentable, ProvidesBackgroundColors {
+struct PotViewModel: PotCellPresentable, ProvidesBackgroundColors {
     private let backgroundColors = shuffledBackgroundColors
 
     /// Configure a cell using a pot
     func configure(cell: UICollectionViewCell, for pot: Pot, item: Int) {
-        guard let cell = cell as? CardCell else { return }
+        guard let cell = cell as? PotCell else { return }
         configureLabel(in: cell, for: pot)
         configureBackground(in: cell, for: item)
     }
 
-    private func configureLabel(in cell: CardCell, for pot: Pot) {
+    private func configureLabel(in cell: PotCell, for pot: Pot) {
         cell.mainLabel.text = pot.name
         cell.mainLabel.textColor = Theme.textColor.color
         cell.mainLabel.font = UIFont.preferredFont(forTextStyle: .headline)
     }
 
-    private func configureBackground(in cell: CardCell, for index: Int) {
+    private func configureBackground(in cell: PotCell, for index: Int) {
         cell.backgroundColor = backgroundColors[index].color
     }
 

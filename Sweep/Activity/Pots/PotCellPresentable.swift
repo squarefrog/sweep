@@ -4,18 +4,18 @@
 
 import UIKit
 
-protocol CardCellPresentable: CellPresentable { }
+protocol PotCellPresentable: CellPresentable { }
 
-extension CardCellPresentable {
+extension PotCellPresentable {
     /// The reuse identifier for the cell
     var reuseIdentifier: String {
-        return CardCell.reuseIdentifier
+        return PotCell.reuseIdentifier
     }
 
     /// Register the card cell
     ///
     /// - Parameter collectionView: The collection view to register the cell in
     func registerCardCell(in collectionView: UICollectionView) {
-        collectionView.register(CardCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        collectionView.register(PotCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
 }
