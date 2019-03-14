@@ -63,6 +63,17 @@ final class SweepViewController: UIViewController {
 
     @objc private func sweep() {
         print("SVEEEEEEEEEEEEEP!")
+        guard
+            let label = accountsViewController.animationView as? UILabel,
+            let destinationView = potsViewController.animationView,
+            let endPosition = destinationView.superview?.convert(destinationView.center, to: view)
+            else { return }
+
+        SweepAnimator.move(label,
+                           toPosition: endPosition,
+                           inside: view,
+                           setup: { /*balanceLabel.text = "£0.00"*/ },
+                           completion: nil)
     }
 
     // MARK: - Temporary Stubbed data loading

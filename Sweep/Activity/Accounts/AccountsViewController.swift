@@ -38,3 +38,9 @@ class AccountsViewController: UIViewController {
                                          configureCell: viewModel.configure)
     }
 }
+
+extension AccountsViewController: AnimationViewProvider {
+    var animationView: UIView? {
+        return pagedView.visibleCell
+    }
+}

@@ -38,3 +38,9 @@ class PotViewController: UIViewController {
                                      configureCell: viewModel.configure)
     }
 }
+
+extension PotViewController: AnimationViewProvider {
+    var animationView: UIView? {
+        return pagedView.visibleCell
+    }
+}

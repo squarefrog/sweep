@@ -29,6 +29,7 @@
 		0E1F447F222EAD4100E60341 /* ProvidesBackgroundColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F447E222EAD4100E60341 /* ProvidesBackgroundColors.swift */; };
 		0E1F4481222EAE4D00E60341 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4480222EAE4D00E60341 /* AccountsViewController.swift */; };
 		0E1F4485222EBCFD00E60341 /* SweepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1F4484222EBCFD00E60341 /* SweepView.swift */; };
+		0E8AF221223AE8AE00FB3369 /* AnimationViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8AF220223AE8AE00FB3369 /* AnimationViewProvider.swift */; };
 		0EB8739422384D64003AC34F /* AccountBalanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB8739322384D64003AC34F /* AccountBalanceViewModel.swift */; };
 		0EB8739622384DB0003AC34F /* Locale+currencyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB8739522384DB0003AC34F /* Locale+currencyCode.swift */; };
 		0EB873982238550E003AC34F /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB873972238550E003AC34F /* AccountCell.swift */; };
@@ -89,6 +90,7 @@
 		0E1F447E222EAD4100E60341 /* ProvidesBackgroundColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidesBackgroundColors.swift; sourceTree = "<group>"; };
 		0E1F4480222EAE4D00E60341 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		0E1F4484222EBCFD00E60341 /* SweepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweepView.swift; sourceTree = "<group>"; };
+		0E8AF220223AE8AE00FB3369 /* AnimationViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewProvider.swift; sourceTree = "<group>"; };
 		0EB8739322384D64003AC34F /* AccountBalanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceViewModel.swift; sourceTree = "<group>"; };
 		0EB8739522384DB0003AC34F /* Locale+currencyCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+currencyCode.swift"; sourceTree = "<group>"; };
 		0EB873972238550E003AC34F /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		0E1F4415222D2BBC00E60341 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				0E8AF220223AE8AE00FB3369 /* AnimationViewProvider.swift */,
 				0EB8739B22386BCA003AC34F /* CellPresentable.swift */,
 				0E1F447E222EAD4100E60341 /* ProvidesBackgroundColors.swift */,
 				0E1F4416222D2BCF00E60341 /* ReusableCell.swift */,
@@ -523,6 +526,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E1F447F222EAD4100E60341 /* ProvidesBackgroundColors.swift in Sources */,
+				0E8AF221223AE8AE00FB3369 /* AnimationViewProvider.swift in Sources */,
 				0E1F4485222EBCFD00E60341 /* SweepView.swift in Sources */,
 				0E1F4464222E7AB400E60341 /* PagedCollectionView.swift in Sources */,
 				0E1F446E222E9B4500E60341 /* Array+wrappedItemAt.swift in Sources */,
