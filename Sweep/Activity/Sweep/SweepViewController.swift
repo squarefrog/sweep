@@ -62,7 +62,6 @@ final class SweepViewController: UIViewController {
     }
 
     @objc private func sweep() {
-        print("SVEEEEEEEEEEEEEP!")
         guard
             let label = accountsViewController.animationView as? UILabel,
             let destinationView = potsViewController.animationView,
