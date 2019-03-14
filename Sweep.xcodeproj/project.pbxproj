@@ -53,6 +53,7 @@
 		0ED0A0C5222BEBCA007057CA /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED0A0C4222BEBCA007057CA /* AccountTests.swift */; };
 		0ED0A0C8222BEEB5007057CA /* AccountsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED0A0C7222BEEB5007057CA /* AccountsResponse.swift */; };
 		0ED0A0CA222BEF1B007057CA /* AccountsResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED0A0C9222BEF1B007057CA /* AccountsResponseTests.swift */; };
+		0EEFAA9C22398DB7002E42E8 /* SweepAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFAA9B22398DB7002E42E8 /* SweepAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		0ED0A0C4222BEBCA007057CA /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		0ED0A0C7222BEEB5007057CA /* AccountsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsResponse.swift; sourceTree = "<group>"; };
 		0ED0A0C9222BEF1B007057CA /* AccountsResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsResponseTests.swift; sourceTree = "<group>"; };
+		0EEFAA9B22398DB7002E42E8 /* SweepAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweepAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,8 +266,9 @@
 		0E1F4483222EBCD200E60341 /* Sweep */ = {
 			isa = PBXGroup;
 			children = (
-				0E1F4403222C6BA000E60341 /* SweepViewController.swift */,
+				0EEFAA9B22398DB7002E42E8 /* SweepAnimator.swift */,
 				0E1F4484222EBCFD00E60341 /* SweepView.swift */,
+				0E1F4403222C6BA000E60341 /* SweepViewController.swift */,
 			);
 			path = Sweep;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				0E1F4469222E965B00E60341 /* Theme.swift in Sources */,
 				0EC25306222BF5C5006A5574 /* Pot.swift in Sources */,
 				0E1F447D222EAC8400E60341 /* PotCellPresentable.swift in Sources */,
+				0EEFAA9C22398DB7002E42E8 /* SweepAnimator.swift in Sources */,
 				0ED0A0BB222BDC67007057CA /* JSONLoader.swift in Sources */,
 				0E1F4404222C6BA000E60341 /* SweepViewController.swift in Sources */,
 				0E1F4426222D357C00E60341 /* PotCell.swift in Sources */,
