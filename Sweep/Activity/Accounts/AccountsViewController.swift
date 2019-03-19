@@ -41,6 +41,7 @@ class AccountsViewController: UIViewController {
 
 extension AccountsViewController: AnimationViewProvider {
     var animationView: UIView? {
-        return pagedView.visibleCell
+        guard let cell = pagedView.visibleCell as? AccountCell else { return nil }
+        return cell.balanceLabel
     }
 }
