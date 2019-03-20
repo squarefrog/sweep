@@ -9,7 +9,7 @@ public struct Account: Decodable {
     public let description: String
     public let created: Date
 
-    public var balance: Int?
+    public var balance: Int64?
     public var currency: String?
 
     public mutating func update(with balanceModel: Balance) {

@@ -5,10 +5,10 @@
 import Foundation
 
 public struct Balance: Decodable {
-    public let balance: Int
-    public let totalBalance: Int
+    public let balance: Int64
+    public let totalBalance: Int64
     public let currency: String
-    public let spendToday: Int
+    public let spendToday: Int64
 }
 
 private extension Balance {

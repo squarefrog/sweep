@@ -38,7 +38,7 @@ class AccountsViewController: UIViewController {
                                          configureCell: viewModel.configure)
     }
 
-    func updateCurrentAccountBalance(_ balance: Int) {
+    func updateCurrentAccountBalance(_ balance: Int64) {
         guard let indexPath = pagedView.collectionView.indexPathForCenterItem else { return }
 
         var account = dataSource.items[indexPath.item]
