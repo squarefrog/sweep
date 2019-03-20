@@ -1,6 +1,7 @@
 //
 //  Copyright © 2019 squarefrog. All rights reserved.
 //
+//  swiftlint:disable function_body_length
 
 import UIKit
 
@@ -26,10 +27,8 @@ struct SweepAnimator {
             return
         }
 
+        snapshotView.frame = sourceView.convert(sourceView.bounds, to: parentView)
         parentView.addSubview(snapshotView)
-
-        let sourceFrame = sourceView.convert(sourceView.bounds, to: parentView)
-        snapshotView.frame = sourceFrame
 
         let layer = snapshotView.layer
         layer.shadowColor = UIColor.black.cgColor
@@ -43,6 +42,7 @@ struct SweepAnimator {
         setup()
 
         UIView.animateKeyframes(withDuration: 1.4, delay: 0, options: [.calculationModeCubic], animations: {
+
             UIView.addKeyframe(withRelativeStartTime: 0.0, relativeDuration: 0.2) {
                 var center = snapshotView.center
                 center.x += 50
@@ -75,12 +75,15 @@ struct SweepAnimator {
                 sourceView.alpha = 1
                 sourceView.transform = .identity
             }
+
         }, completion: { finished in
             if !finished {
                 sourceView.alpha = 1
                 sourceView.transform = .identity
             }
+
             snapshotView.removeFromSuperview()
+
             completion?(finished)
         })
     }
