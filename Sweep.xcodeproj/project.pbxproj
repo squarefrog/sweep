@@ -35,6 +35,7 @@
 		0EB873982238550E003AC34F /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB873972238550E003AC34F /* AccountCell.swift */; };
 		0EB8739A22386BA3003AC34F /* AccountCellPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB8739922386BA3003AC34F /* AccountCellPresentable.swift */; };
 		0EB8739C22386BCA003AC34F /* CellPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB8739B22386BCA003AC34F /* CellPresentable.swift */; };
+		0EBF2FA42242C7FA002742B8 /* UICollectionView+indexPathForCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF2FA32242C7FA002742B8 /* UICollectionView+indexPathForCenterCell.swift */; };
 		0EC25302222BF5A6006A5574 /* pots.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EC25301222BF5A6006A5574 /* pots.json */; };
 		0EC25304222BF5BF006A5574 /* PotsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25303222BF5BF006A5574 /* PotsResponse.swift */; };
 		0EC25306222BF5C5006A5574 /* Pot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC25305222BF5C5006A5574 /* Pot.swift */; };
@@ -96,6 +97,7 @@
 		0EB873972238550E003AC34F /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		0EB8739922386BA3003AC34F /* AccountCellPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCellPresentable.swift; sourceTree = "<group>"; };
 		0EB8739B22386BCA003AC34F /* CellPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPresentable.swift; sourceTree = "<group>"; };
+		0EBF2FA32242C7FA002742B8 /* UICollectionView+indexPathForCenterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+indexPathForCenterCell.swift"; sourceTree = "<group>"; };
 		0EC25301222BF5A6006A5574 /* pots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pots.json; sourceTree = "<group>"; };
 		0EC25303222BF5BF006A5574 /* PotsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsResponse.swift; sourceTree = "<group>"; };
 		0EC25305222BF5C5006A5574 /* Pot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pot.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			children = (
 				0E1F446D222E9B4500E60341 /* Array+wrappedItemAt.swift */,
 				0EB8739522384DB0003AC34F /* Locale+currencyCode.swift */,
+				0EBF2FA32242C7FA002742B8 /* UICollectionView+indexPathForCenterCell.swift */,
 				0E1F446B222E997800E60341 /* UIColor+hexString.swift */,
 			);
 			path = Extensions;
@@ -547,6 +550,7 @@
 				0EC25306222BF5C5006A5574 /* Pot.swift in Sources */,
 				0E1F447D222EAC8400E60341 /* PotCellPresentable.swift in Sources */,
 				0EEFAA9C22398DB7002E42E8 /* SweepAnimator.swift in Sources */,
+				0EBF2FA42242C7FA002742B8 /* UICollectionView+indexPathForCenterCell.swift in Sources */,
 				0ED0A0BB222BDC67007057CA /* JSONLoader.swift in Sources */,
 				0E1F4404222C6BA000E60341 /* SweepViewController.swift in Sources */,
 				0E1F4426222D357C00E60341 /* PotCell.swift in Sources */,

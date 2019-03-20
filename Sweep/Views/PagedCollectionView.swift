@@ -30,11 +30,7 @@ class PagedCollectionView: UIView {
 
     /// Returns the current 'page' in the collection view
     var visibleCell: UICollectionViewCell? {
-        let x = collectionView.center.x + collectionView.contentOffset.x
-        let y = collectionView.center.y + collectionView.contentOffset.y
-        let centerPoint = CGPoint(x: x, y: y)
-
-        guard let indexPath = collectionView.indexPathForItem(at: centerPoint) else { return nil }
+        guard let indexPath = collectionView.indexPathForCenterItem else { return nil }
 
         return collectionView.cellForItem(at: indexPath)
     }
