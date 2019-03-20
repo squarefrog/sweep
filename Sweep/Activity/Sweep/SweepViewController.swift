@@ -68,11 +68,11 @@ final class SweepViewController: UIViewController {
             let endPosition = destinationView.superview?.convert(destinationView.center, to: view)
             else { return }
 
-        SweepAnimator.move(label,
-                           toPosition: endPosition,
-                           inside: view,
-                           setup: { /*balanceLabel.text = "£0.00"*/ },
-                           completion: nil)
+        let resetBalance = {
+            self.accountsViewController.updateCurrentAccountBalance(0)
+        }
+
+        SweepAnimator.move(label, toPosition: endPosition, inside: view, setup: resetBalance, completion: nil)
     }
 
     // MARK: - Temporary Stubbed data loading

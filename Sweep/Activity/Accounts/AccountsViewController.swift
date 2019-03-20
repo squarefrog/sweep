@@ -37,6 +37,22 @@ class AccountsViewController: UIViewController {
                                          reuseIdentifier: viewModel.reuseIdentifier,
                                          configureCell: viewModel.configure)
     }
+
+    func updateCurrentAccountBalance(_ balance: Int) {
+        guard let indexPath = pagedView.collectionView.indexPathForCenterItem else { return }
+
+        var account = dataSource.items[indexPath.item]
+        account.balance = balance
+        dataSource.items[indexPath.item] = account
+
+        updateCell(at: indexPath, using: account)
+    }
+
+    private func updateCell(at indexPath: IndexPath, using account: Account) {
+        guard let cell = pagedView.collectionView.cellForItem(at: indexPath) else { return }
+
+        viewModel.configure(cell: cell, for: account, item: indexPath.item)
+    }
 }
 
 extension AccountsViewController: AnimationViewProvider {
